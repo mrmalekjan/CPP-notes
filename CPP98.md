@@ -1,3 +1,4 @@
+# C++98
 
 ## 1. Classes
 
@@ -5,15 +6,15 @@
 class Person
 {
 private: //Encapsulation
-	int id;
+ int id;
 protected: //Encapsulation
 public:
-	Person(int id): id(id) // Constructor
-	{
-	}
-	~Person() // Destructor
-	{
-	}
+ Person(int id): id(id) // Constructor
+ {
+ }
+ ~Person() // Destructor
+ {
+ }
     void SayHello()
     {
         std::cout << "Hello";
@@ -22,12 +23,15 @@ public:
 ```
 
 ---
+
 ## 2. Overloading
 
 ```cpp
-void Print(int x); 
+void Print(int x);
 void Print(double x);
 ```
+
+---
 
 ## 3. Operator Overloading
 
@@ -59,6 +63,8 @@ void main()
 }
 ```
 
+---
+
 ## 4. Inheritance
 
 ```cpp
@@ -71,7 +77,7 @@ class Dog : public Animal
 };
 ```
 
-## 5. Multiple Inheritance 
+## 5. Multiple Inheritance
 
 ```cpp
 class A {};
@@ -82,13 +88,15 @@ class C : public A, public B
 };
 ```
 
+---
+
 ## 6. Virtual Function
 
 ```cpp
 class Animal
 {
 public:
-    virtual void Speak() 
+    virtual void Speak()
     {
         std::cout << "Animal\n";
     }
@@ -103,6 +111,8 @@ public:
     }
 };
 ```
+
+---
 
 ## 7. Pure Virtual Function
 
@@ -122,6 +132,8 @@ public:
     }
 };
 ```
+
+---
 
 ## 8. Runtime Polymorphism
 
@@ -158,6 +170,9 @@ int main()
     a->Speak(); //"Meow\n"
 }
 ```
+
+---
+
 ## 9. Virtual Destructor
 
 ```cpp
@@ -181,11 +196,13 @@ public:
 
 void main()
 {
-	Base* ptr = new Derived(); 
-	delete ptr; // if ~Base was not virtual, only Base destructor would be called and ~Derived would not. So Derived would remain undeleted
+ Base* ptr = new Derived();
+ delete ptr; // if ~Base was not virtual, only Base destructor would be called and ~Derived would not. So Derived would remain undeleted
 }
 
 ```
+
+---
 
 ## 10. Friend
 
@@ -208,6 +225,8 @@ void PrintBalance(const BankAccount& account)
 }
 ```
 
+---
+
 ## 11. static members
 
 ```cpp
@@ -225,7 +244,7 @@ public:
 
 int main()
 {
-	int Car::count = 0;
+ int Car::count = 0;
     Car a;
     Car b;
     Car c;
@@ -235,4 +254,4 @@ int main()
 }
 ```
 
-
+---

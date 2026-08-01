@@ -1,3 +1,4 @@
+# C++11
 
 ## 1. auto
 
@@ -450,29 +451,35 @@ std::mt19937 gen; // more standard and accurate random number
 ## 21. Unordered Map
 
 **Before C++11:**
+
 ```cpp
 std::map<int, std::string> m; // based on "Red-Black Tree"
 
-m[5] = "Five"; 
+m[5] = "Five";
 m[1] = "One";
-m[8] = "Eight"; 
+m[8] = "Eight";
 m[3] = "Three";
 ```
+
 **Pros:**
+
 - All keys are sorted
 Cons:
 - Complexity of searching, inserting and deletion is equal to O(log n)
 
 **In C++11:**
+
 ```cpp
 std::unordered_map<int, std::string> // based on "Hash Table"
 
-m[5] = "Five"; 
-m[1] = "One"; 
-m[8] = "Eight"; 
+m[5] = "Five";
+m[1] = "One";
+m[8] = "Eight";
 m[3] = "Three";
 ```
+
 **Pros:**
+
 - Most of the time, complexity of searching, inserting and deletion is equal to O(1) and in the worst case is O(n). So it is faster for larger maps
 Cons:
 - Keys are not sorted
@@ -497,7 +504,6 @@ std::string s = std::get<2>(t1); // "hello"
 ---
 
 ## 23. Forward List
-
 
 ```cpp
 std::forward_list<int> fl = {1, 2, 3, 4, 5, 3, 6};
@@ -524,5 +530,3 @@ a1 = a2;        // Note: assignment still works! (more on this later)
 ```
 
 ---
-
-
