@@ -22,6 +22,13 @@ auto y = 3.14;      // double
 auto z = "Hello";   // const char*
 ```
 
+```cpp
+auto doubleValue = [](int x) // Just for lambdas not for functions
+{
+    return x * 2;
+};
+```
+
 ---
 
 ## 2. Range-based for
